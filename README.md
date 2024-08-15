@@ -1,15 +1,12 @@
-## A session metric based on the Theory of Planned Behavior (*TPB*)
-
+## A session measure based on the Theory of Planned Behavior (*TPB*)
 ---
 
 #### 1. Introduction
-
 ---
 
 ######      We propose a novel user model based on TPB for multi-query sessions, namely sTPB. This repository contains the source-code of the Python-based implementation of sTPB.
 
 #### 2. Requirements
-
 ---
 
 - ######  python>=3.0
@@ -21,6 +18,7 @@
 - ###### json == 2.0.9
 
 #### 3. Data Preparation
+---
 
 ###### 	 Preprocess the dataset TianGongQref into the the following format:
 
@@ -89,6 +87,7 @@
 ```
 
 #### 4. Results
+---
 
 ​	The results of sTPB compared with baseline metrics are shown in the following table:
 
@@ -100,6 +99,7 @@
 | sTPB       | $G$=0.77 (0.05), $C$=6.00,$\gamma$=0.095 | $\mathbf{0.253}$    | $\mathbf{0.044}$    | $\mathbf{0.407}$    | $\mathbf{0.410}$    |
 
 #### 5. Quick Start
+---
 
 ###### To use sTPB, run the script (run.sh) as follows:
 
