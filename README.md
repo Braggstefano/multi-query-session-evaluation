@@ -101,12 +101,12 @@
 #### 5. Quick Start
 ---
 
-###### To use sTPB, run the script (run.sh) as follows:
+###### To use sTPB, run the script (run.sh) as follows:  
 
 ```sh
 python3 run.py --G_0 1.0 --C_0 6.0 --gamma 1.0  --bounded_rationality [0.25,10,0.25,10,4,7.5] --N 10
 ```
-
+Note the parameter R3 in sTPB also can be different in two types of expectation management modes.
 
 
 
