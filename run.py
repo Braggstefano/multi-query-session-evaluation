@@ -30,7 +30,7 @@ def parse_args():
         
 #     examine_behaviour_dist, query_behaviour_dist, max_session_len = get_examine_query_behavior_dist(train_sessions)
 #     parameters_names = list(parameters_range.keys())
-#     if metric == 'sBPM_IFT_soft':
+#     if metric == 'sTPB':
 #         for parameter0, parameter1,parameter2 in itertools.product(parameters_range[parameters_names[0]],
 #                                                     parameters_range[parameters_names[1]],
 #                                                     parameters_range[parameters_names[2]],
@@ -54,6 +54,7 @@ def parse_args():
 #     MSE_examination = np.sum(np.square(examine_behaviour_dist - examine_model_dist))/length_of_test_sessions
 #     MSE_reformulation = np.sum(np.square(query_behaviour_dist - query_model_dist))/length_of_test_sessions
 #     spearman_corr, pearson_corr = metric_correlation_coefficient(test_sessions, examine_model_dist)
+#     return MSE_examination, MSE_reformulation, spearman_corr, pearson_corr
 
 
 
