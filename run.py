@@ -5,7 +5,7 @@ import json
 import scipy
 from utils import*
 # from sTPB_metric import *
-print(json.__version__)
+# print(json.__version__)
 
 # Add argparse to parse command-line arguments
 def parse_args():
@@ -25,8 +25,8 @@ def parse_args():
 #     parameters_range = {}
 #     if metric == 'sTPB':
 #         parameters_range['G_0'] = np.arange(0.1, 5.01, 0.1)
-#         parameters_range['C_0'] = np.arange(0.1, 5.01, 1)
-#         parameters_range['gamma'] = np.arange(0.0, 1.01, 0.1)
+#         parameters_range['C_0'] = np.arange(1.0, 10.1, 1)
+#         parameters_range['gamma'] = np.arange(0.0, 1.01, 0.01)
         
 #     examine_behaviour_dist, query_behaviour_dist, max_session_len = get_examine_query_behavior_dist(train_sessions)
 #     parameters_names = list(parameters_range.keys())
