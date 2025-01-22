@@ -7,9 +7,14 @@ from ranking import Ranking
 from cwl_metrics import CWLMetric
 
 # Mapping usefulness scores to gain values
+# If the relevance or usefulness criteria are based on a 4-point scale, the following normalization mapping relationship is applied.
 gain_mapping = {
-    'usefulness': {0: 0.0, 1: 0.25, 2: 0.5, 3: 0.75, 4: 1.0}
+    'usefulness': {0: 0.0, 1: 0.33, 2: 0.66, 3: 1.0}
 }
+# If the relevance or usefulness criteria are based on a 5-point scale, the following normalization mapping relationship is applied.
+# gain_mapping = {
+#     'usefulness': {0: 0.0, 1: 0.25, 2: 0.5, 3: 0.75, 4: 1.0}
+# }
 
 class query_TPB_Metric(CWLMetric):
     def __init__(self, br, G=2.0, C=10.0, gamma=0.1, mode='m1&m2'):
