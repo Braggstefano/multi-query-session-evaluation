@@ -12,7 +12,7 @@ gain_mapping = {
 }
 
 class query_TPB_Metric(CWLMetric):
-    def __init__(self, br, G=1.0, C=1.0, gamma=1, mode='m1&m2'):
+    def __init__(self, br, G=1.0, C=1.0, gamma=0.1, mode='m1&m2'):
         super().__init__()
         # Initialize parameters
         self.b1 = br[0]
