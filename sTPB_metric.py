@@ -9,7 +9,7 @@ from cwl_metrics import CWLMetric
 # Mapping usefulness scores to gain values
 # If the relevance or usefulness criteria are based on a 4-point scale, the following normalization mapping relationship is applied.
 gain_mapping = {
-    'usefulness': {0: 0.0, 1: 0.33, 2: 0.66, 3: 1.0}
+    'usefulness': {0: 0.0, 1: 1/3, 2: 2/3, 3: 1.0}
 }
 # If the relevance or usefulness criteria are based on a 5-point scale, the following normalization mapping relationship is applied.
 # gain_mapping = {
