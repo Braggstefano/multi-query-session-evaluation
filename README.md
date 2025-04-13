@@ -92,11 +92,11 @@ The performance gains are computed via linear normalization, with the unit cost 
 
 - ###### R₁ = 10, R₂ = 1
 
-- ###### b₁ = 0.5, b₂ = 0.5
+- ###### b₁ = 0.25, b₂ = 0.25
 
 - ###### For the two expectation management modes:
 
-           - Risk-seeking mode: R₃ = 10
+           - Risk-seeking mode: R₃ = -10
 
            - Risk-averse mode: R₃ = 20
 
