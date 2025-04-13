@@ -61,19 +61,19 @@ class query_TPB_Metric(CWLMetric):
             for i in range(len(c_gains)):
                 rate = c_gains[i]/c_costs[i]
                 indictor  = rate-self.gamma
-                coefficient = 1-(sigmoid(indictor, 5, self.R3_1)+sigmoid(indictor, 5, self.R3_2))/2
+                coefficient = 1-(sigmoid(indictor, self.b3, self.R3_1)+sigmoid(indictor, self.b3, self.R3_2))/2
                 coefficient_list.append(coefficient)
         elif self.mode == "m1":
             for i in range(len(c_gains)):
                 rate = c_gains[i]/c_costs[i]
                 indictor  = rate-self.gamma
-                coefficient = 1-sigmoid(indictor,5,self.R3_1)
+                coefficient = 1-sigmoid(indictor, self.b3, self.R3_1)
                 coefficient_list.append(coefficient)
         elif self.mode == "m2":
             for i in range(len(c_gains)):
                 rate = c_gains[i]/c_costs[i]
                 indictor  = rate-self.gamma
-                coefficient = 1-sigmoid(indictor,5,self.R3_2)
+                coefficient = 1-sigmoid(indictor, self.b3, self.R3_2)
                 coefficient_list.append(coefficient)
         
             
