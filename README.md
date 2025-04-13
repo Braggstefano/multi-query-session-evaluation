@@ -90,17 +90,17 @@
 
 The performance gains are computed via linear normalization, with the unit cost set to 1.0. We recommend the following default parameter configurations:
 
-R₁ = 10, R₂ = 1
+- ###### R₁ = 10, R₂ = 1
 
-b₁ = 0.5, b₂ = 0.5
+- ###### b₁ = 0.5, b₂ = 0.5
 
-For the two expectation management modes:
+- ###### For the two expectation management modes:
 
-- Risk-seeking mode: R₃ = 10
+           - Risk-seeking mode: R₃ = 10
 
-- Risk-averse mode: R₃ = 20
+           - Risk-averse mode: R₃ = 20
 
-- b₃ = 5
+           - b₃ = 5
 
 These values serve as default settings for the sTPB model and can be further adjusted based on specific application requirements.
 
@@ -124,7 +124,7 @@ These values serve as default settings for the sTPB model and can be further adj
 ```sh
 python3 run.py --G_0 2.5 --C_0 10.0 --gamma 0.1  --bounded_rationality [0.25,10,0.25,1,5,-10,20] --N 10
 ```
-
+bounded_rationality=[b1, R1, b2, R2, b3, R3_1, R3_2]
 
 
 
