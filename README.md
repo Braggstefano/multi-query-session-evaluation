@@ -86,7 +86,25 @@
     }
 ```
 
-#### 4. Results
+#### 4. Parameter Settings for sTPB Framework
+
+The performance gains are computed via linear normalization, with the unit cost set to 1.0. We recommend the following default parameter configurations:
+
+R₁ = 10, R₂ = 1
+
+b₁ = 0.5, b₂ = 0.5
+
+For the two expectation management modes:
+
+- Risk-seeking mode: R₃ = 10
+
+- Risk-averse mode: R₃ = 20
+
+- b₃ = 5
+
+These values serve as default settings for the sTPB model and can be further adjusted based on specific application requirements.
+
+#### 5. Results
 ---
 
 ​	The results of sTPB compared with baseline metrics are shown in the following table:
@@ -98,9 +116,9 @@
 | sINST      | $T$=2.64 (0.05),  $\kappa$=1.30   | 0.875               | 0.849               | $\underline{0.397}$         | $\underline{0.401}$ |
 | sTPB       | $G$=2.10 (0.12), $C$=12.50, $\gamma$=0.045 | $\mathbf{0.241}$    | $\mathbf{0.035}$    | $\mathbf{0.414}$    | $\mathbf{0.418}$    |
 
-#### 5. Quick Start
+#### 6. Quick Start
 ---
-
+ 
 ###### To use sTPB, run the script (run.sh) as follows:  
 
 ```sh
